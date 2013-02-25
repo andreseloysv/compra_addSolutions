@@ -9,19 +9,19 @@ class ControlAccesoController extends ControladorAplicacion {
         
     }
 
-    function buscar_usuario($campos, $modelo, $condiciones) {
-        $datos = $this->buscar($campos, "Estudiante", $condiciones);
+    function buscar_evento($campos, $modelo, $condiciones) {
+        $datos = $this->buscar($campos, "Evento", $condiciones);
         $_SESSION['respuesta'] = $datos;
         if (empty($datos['respuesta'])) {
             $_SESSION['respuesta']['respuesta'] = array();
-            $datos = $this->buscar($campos, "Trabajador", $condiciones);
+            $datos = $this->buscar($campos, "Producto", $condiciones);
             unset($_SESSION['respuesta']);
             $_SESSION['respuesta'] = $datos;
             if (empty($datos['respuesta'])) {
                 $_SESSION['respuesta']['respuesta'] = array();
             }
         }
-        Redireccion::DireccionarVista("ControlAcceso", "buscar_usuario");
+        Redireccion::DireccionarVista("ControlAcceso", "buscar_evento");
     }
 }
 

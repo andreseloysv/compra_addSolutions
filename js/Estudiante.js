@@ -13,7 +13,7 @@ function conteo_regresivo(url){
     });
 }
 
-function agregar_usuario($inputs){    
+function agregar_cliente($inputs){    
     var values = {};
     $inputs.each(function() {
 	values[this.name] = $(this).val();

@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        header("Location: http://127.0.0.1/comedor/Vista/ControlAcceso");
+        header("Location: http://127.0.0.1/compra/Vista/ControlAcceso");
         ?>
     </body>
 </html>

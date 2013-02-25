@@ -3,29 +3,33 @@ root {
 }
 
 body{
-    background-color: #00A8FF;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
 }
 #banner{
-    background-image: url(../imagenes/pixel_banerr.png);
     width: 100%;
-    height: 74px;
-    background-repeat: repeat-x;
+    height: 62px;
+    background-color: #4cacdc;
+    margin: auto;
 }
 #banner_titulo{
-    background-image: url(../imagenes/tituloo.png);
+    background-image: url(../imagenes/titulo.png);
     width: 336px;
-    height: 43;
+    height: 53px;
     z-index: 100;
-    margin-top: 15px;
-    position: absolute;  
-    margin-left: 10%;
+    margin-top: 9px;
+    position: relative;  
+    margin-left: 17%;
+    float: left
+}
+#link_banner{
+    position: relative;
 }
 #contenido{
-    background-color: #01CFFF;
+    background-color: #ffffff;
     height: 530px;
     width: 65%;
-    margin-left: 10%;
-    margin-top: -3px;
+    margin: auto;
 
 }
 #contenido_error{
@@ -43,12 +47,8 @@ body{
     color: #000;
     height: 600px;
     width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -50%;
-    margin-top: 50px;
     top: 0;
+    margin: -8px;
 }
 #logo{
     background-image: url(../imagenes/logoo.png);
@@ -71,12 +71,11 @@ body{
     float:left;
 }
 #resultado{
-    float:left;
-    margin-top: 5%;
-    margin-left: 5%;
-    width: 60%;
-    height: 60%;
-    background-color: yellow;
+    
+}
+#resultado_inicio_sesion
+{
+
 }
 fieldset{
     border-width:4px;
@@ -91,19 +90,30 @@ fieldset{
 .compo_fielset input{
     width: 200px;
 }
-
-
-
+.campo_formulario{
+    margin-bottom: 20px;
+}
+.campo_input_inicio_sesion input{
+    width: 200px;
+    height: 25px;
+}
+.titulo_formulario{
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
+#label_inicio_sesion{
+    margin-bottom: 30px
+}
 
 /*
             menu principal de la pagina
 */
 
 #menu{
-    margin-left: 10%;
     float: left;
     z-index: 400;
-    margin-top: -3px;
+    position: relative;
+    margin-top: 9px;
 }
 #button {
     background: #2586d7;
@@ -118,29 +128,36 @@ fieldset{
     font-size:16px;
     text-decoration: none;
     float:left;
-    padding: 10px;
+    padding: 17px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #2175bc;
+    background-color: #4cacdc;
     color: #fff;
+    border-right-width: 1px;
+    border-bottom-right-radius: 8px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: solid;
+}
+#button li:last-child a{
+    border-right-style: none;
 }
 #button li a:hover {
-    background-color: #2586d7;
-    margin-top:-2px;
-    padding-bottom:12px;
+    background-color: #419fce;
+    margin-top:0px;
+    padding-bottom:16px;
 }
 
 #enviar_formulario{
-    float: right;
+/*    float: right;*/
 }
 .error{
-display: inline-table;
-color: white;
-background-color: red;
-float: initial;
-position: absolute;
-border-style: solid;
-border-width: 2;
+    display: inline-table;
+    color: white;
+    background-color: red;
+    float: initial;
+    position: absolute;
+    border-style: solid;
+    border-width: 2;
 }
 
 
@@ -148,4 +165,14 @@ border-width: 2;
     font-size: x-large;
     color: #FFFFFF;
     background-color: #01CFFF;
+}
+
+.marco_inicio_sesion{
+    margin-top: 10px;
+    border-color: rgb(199, 199, 199);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    padding-top: 50px;
+    padding-left: 100px;
 }
