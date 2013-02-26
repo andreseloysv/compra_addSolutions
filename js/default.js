@@ -1,18 +1,22 @@
 
 $(document).ready(function() {
     countdown=0; //constante que sirve para reiniciar el contador en #timer
-//    $('#buscar_usuario').submit(function() {
-//	buscar_usuario();  
-//	return false;
-//    });
-//    $('#ControlAcceso_cedula').on('keyup',function(){
-//	buscar_usuario();  
-//    });
+    //    $('#buscar_usuario').submit(function() {
+    //	buscar_usuario();  
+    //	return false;
+    //    });
+    //    $('#ControlAcceso_cedula').on('keyup',function(){
+    //	buscar_usuario();  
+    //    });
     
     $('#agregar_usuario').submit(function() {    
-//	if ($("#agregar_usuario").valid()) {
-	    agregar_usuario($('#agregar_usuario :input'));
-//	}
+	//	if ($("#agregar_usuario").valid()) {
+	agregar_usuario($('#agregar_usuario :input'));
+	//	}
+	return false;
+    });
+    $('#inicio_sesion').submit(function() { 
+	inicio_sesion($('#inicio_sesion :input'));
 	return false;
     });
 });

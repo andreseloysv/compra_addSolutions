@@ -1,5 +1,4 @@
 function agregar_usuario($inputs){    
-    console.debug($inputs);
     var values = {};
     $inputs.each(function() {
 	values[this.name] = $(this).val();

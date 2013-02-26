@@ -8,7 +8,7 @@ include '../../configuracion/Nucleo.php';
 	    <ul id="button">
 		<li><a href="../Producto/agregar.php"> +Producto</a></li>
 		<li><a href="../Evento/agregar.php"> +Evento</a></li>    
-		<li><a href="../Evento/agregar.php"> Iniciar Sesion</a></li>    
+		<li><a href="../Evento/agregar.php"> +Usuario</a></li>    
 	    </ul>
 	</div>
     </div>

@@ -8,6 +8,7 @@ include '../../configuracion/Nucleo.php';
 	    <ul id="button">
 		<li><a href="../Producto/agregar.php"> +Producto</a></li>
 		<li><a href="../Evento/agregar.php"> +Evento</a></li>    
+		<li><a href="../ControlAcceso/index.php"> Iniciar Sesion</a></li>
 	    </ul>
 	</div>
     </div>
@@ -17,9 +18,9 @@ include '../../configuracion/Nucleo.php';
 		<div class="titulo_formulario">
 		    <label>Inicio Sesion: </label>
 		</div>
-		<form action="../../rutas.php" method="POST" >
+		<form action="../../rutas.php" method="POST" id="inicio_sesion" name="inicio_sesion">
 		    <input type="hidden" name="id">
-		    <input type="hidden" name="Modelo" value="Administrador/mostrar">
+		    <input type="hidden" name="Modelo" value="ControlAcceso/inicio_sesion">
 		    <div class="campo_formulario">
 			<label>Nombre Usuario: </label>
 			<div class="campo_input_inicio_sesion">
@@ -34,10 +35,11 @@ include '../../configuracion/Nucleo.php';
 			    <input type="password" name="clave" id="clave">
 			</div>
 		    </div>
-		    <input type="submit" value="Inicio sesion">
+		    <input type="submit" name="inicio_sesion" id="inicio_sesion" value="Inicio sesion">
 		</form>
 		<div id="resultado_inicio_sesion" name="resultado_inicio_sesion"></div>
 	    </div>
 	</div>
     </div>
+    <div id="dialogo" name="dialogo" title="Mensaje"></div> <span/>
 </div>
